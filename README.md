@@ -1,190 +1,124 @@
 <div align="center">
   <br>
-  <h1>Forem 🌱</h1>
-  <strong>For Empowering Community</strong>
+  <h1>ESTRA LINK 🌐</h1>
+  <strong>Le réseau social éducatif qui connecte le savoir</strong>
 </div>
 <br>
 <p align="center">
-  <a href="https://github.com/forem/forem/actions/workflows/ci.yml">
-    <img src="https://github.com/forem/forem/actions/workflows/ci.yml/badge.svg" alt="Build Status">
+  <a href="https://github.com/estra-link/estra-link/actions/workflows/ci.yml">
+    <img src="https://github.com/estra-link/estra-link/actions/workflows/ci.yml/badge.svg" alt="Build Status">
   </a>
-  <a href="https://github.com/forem/forem/actions/workflows/cd.yml">
-    <img src="https://github.com/forem/forem/actions/workflows/cd.yml/badge.svg" alt="Build Status">
+  <a href="https://github.com/estra-link/estra-link/actions/workflows/cd.yml">
+    <img src="https://github.com/estra-link/estra-link/actions/workflows/cd.yml/badge.svg" alt="Build Status">
   </a>
-  <img src="https://img.shields.io/github/commit-activity/w/forem/forem" alt="GitHub commit activity">
-  <a href="https://github.com/forem/forem/issues?q=is%3Aissue+is%3Aopen+label%3A%22ready+for+dev%22">
-    <img src="https://img.shields.io/github/issues/forem/forem/ready%20for%20dev" alt="GitHub issues ready for dev">
+  <img src="https://img.shields.io/github/commit-activity/w/estra-link/estra-link" alt="GitHub commit activity">
+  <a href="https://github.com/estra-link/estra-link/issues?q=is%3Aissue+is%3Aopen+label%3A%22ready+for+dev%22">
+    <img src="https://img.shields.io/github/issues/estra-link/estra-link/ready%20for%20dev" alt="GitHub issues ready for dev">
   </a>
-  <a href="https://gitpod.io/#https://github.com/forem/forem">
+  <a href="https://gitpod.io/#https://github.com/estra-link/estra-link">
     <img src="https://img.shields.io/badge/setup-automated-blue?logo=gitpod" alt="GitPod badge">
   </a>
 </p>
 
-Welcome to the [Forem](https://forem.com) codebase, the platform that powers
-[dev.to](https://dev.to). We are so excited to have you. With your help, we can
-build out Forem’s usability, scalability, and stability to better serve our
-communities.
+Bienvenue sur le code source d'**[ESTRA LINK](https://estra-link.com)**, la plateforme qui connecte étudiants, enseignants et passionnés de savoir. Nous sommes ravis de vous accueillir. Avec votre aide, nous pouvons construire un espace éducatif collaboratif, accessible et innovant pour toutes les communautés d'apprentissage.
 
-## What is Forem?
+## Qu'est-ce qu'ESTRA LINK ?
 
-Forem is open source software for building communities. Communities for your
-peers, customers, fanbases, families, friends, and any other time and space
-where people need to come together to be part of a collective.
-[See our announcement post](https://dev.to/devteam/for-empowering-community-2k6h)
-for a high-level overview of what Forem is.
+ESTRA LINK est une plateforme open source dédiée à l'éducation et au partage de connaissances. Elle permet de créer des communautés d'apprentissage où les membres peuvent échanger des ressources, participer à des discussions thématiques, suivre des parcours pédagogiques et construire leur profil académique. Notre mission est de démocratiser l'accès au savoir en connectant les apprenants du monde entier.
 
-[dev.to](https://dev.to) (or just DEV) is hosted by Forem. It is a community of
-software developers who write articles, take part in discussions, and build
-their professional profiles. We value supportive and constructive dialogue in
-the pursuit of great code and career growth for all members. The ecosystem spans
-from beginner to advanced developers, and all are welcome to find their place
-within our community. ❤️
+Nous croyons en une éducation inclusive et collaborative, où chaque voix compte et chaque connaissance mérite d'être partagée. ❤️
 
-## Table of Contents
+## Table des matières
 
-- [What is Forem?](#what-is-forem)
-- [Table of Contents](#table-of-contents)
-- [Contributing](#contributing)
-- [Getting Started](#getting-started)
-  - [Installation Documentation](#installation-documentation)
-- [Developer Documentation](#developer-documentation)
-- [Deployment with Kamal](#deployment-with-kamal)
-- [Vulnerability Disclosure](#vulnerability-disclosure)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
+- [Qu'est-ce qu'ESTRA LINK ?](#quest-ce-questra-link)
+- [Table des matières](#table-des-matières)
+- [Contribuer](#contribuer)
+- [Pour commencer](#pour-commencer)
+  - [Documentation d'installation](#documentation-dinstallation)
+- [Documentation développeur](#documentation-développeur)
+- [Déploiement avec Kamal](#déploiement-avec-kamal)
+- [Signalement de vulnérabilités](#signalement-de-vulnérabilités)
+- [Remerciements](#remerciements)
+- [Licence](#licence)
 
+## Contribuer
 
-## Contributing
+Nous acceptons les pull requests sur tous les tickets, quel que soit leur statut, dès lors qu'elles apportent une correction ou une amélioration. Bien que nous ne puissions garantir que chaque PR sera fusionnée, nous valorisons toutes les suggestions et contributions légitimes.
 
-We welcome pull requests on any issue, regardless of its current status, if it provides a fix or improvement. While we cannot guarantee that every PR will be merged, we value legitimate suggestions and contributions.
+**Toutes les pull requests doivent inclure des tests appropriés.** Notre attention actuelle se porte principalement sur les tests de régression backend, tandis que les modifications frontend peuvent nécessiter une revue utilisateur plus approfondie.
 
-**All pull requests should include appropriate tests.** Our current focus is primarily on backend-related regression tests, while frontend changes may require more extensive user review.
+Nous accueillons les pull requests assistées par IA, mais nous refuserons le "slop" — toutes les soumissions doivent maintenir des standards élevés de qualité de code et d'utilité concrète.
 
-We welcome AI-assisted pull requests but will turn away "slop"—all submissions must maintain high standards of code quality and meaningful utility.
+🤖 Les agents IA peuvent consulter `AGENTS.md` pour plus d'instructions. Pour les IDE et environnements spécifiques, ESTRA LINK synchronise également ces règles dans `.cursorrules`, `.windsurfrules` et `.github/copilot-instructions.md`.
 
-🤖 AI Agents should check out `AGENTS.md` for more instructions. For specific IDEs and environments, Forem also synchronizes these rules across `.cursorrules`, `.windsurfrules`, and `.github/copilot-instructions.md`.
+Consultez également le [Guide de contribution à ESTRA LINK](https://docs.estra-link.com/contributing-guide) pour des directives plus détaillées.
 
-Please also check out the [Contributing to Forem guide](https://developers.forem.com/contributing-guide/forem) for more detailed guidelines.
+## Pour commencer
 
-## Getting Started
+Cette section fournit un guide de démarrage rapide. Si vous cherchez une installation plus complète (par exemple [pour macOS](https://docs.estra-link.com/getting-started/installation/mac)), référez-vous à notre [Documentation développeur](https://docs.estra-link.com/) complète.
 
-This section provides a high-level quick start guide. If you're looking for a
-more thorough installation guide (for example
-[with macOS](https://developers.forem.com/getting-started/installation/mac)),
-you'll want to refer to our complete
-[Developer Documentation](https://developers.forem.com/).
+Nous fonctionnons avec un backend [Rails](https://rubyonrails.org/) et une interface frontend moderne en [React](https://reactjs.org/).
 
-We run on a [Rails](https://rubyonrails.org/) backend, and we are currently
-transitioning to a [Preact](https://preactjs.com/)-first frontend.
+**Prérequis important** : ESTRA LINK utilise des embeddings IA avancés pour la génération de flux personnalisés et les recommandations de contenu. Vous devez vous assurer que votre installation PostgreSQL dispose de l'extension `pgvector` (version 0.8.0 ou supérieure) pour supporter l'indexation HNSW. Cette extension de base de données est **obligatoire** pour exécuter les migrations et faire fonctionner l'application.
 
-**Prerequisites Note**: Forem now utilizes advanced AI embeddings for feed generation. You must ensure your PostgreSQL installation has the `pgvector` extension (version 0.8.0 or higher) installed to support HNSW indexing. This database extension is a **hard requirement** to migrate the database and run the app. 
+Pour installer `pgvector` :
+- **macOS (Homebrew)** : `brew install pgvector`
+- **Linux (Debian/Ubuntu)** : `sudo apt install postgresql-15-pgvector` (ajustez `15` selon votre version de PostgreSQL), ou compilez depuis les sources en suivant le [guide d'installation pgvector](https://github.com/pgvector/pgvector#installation).
 
-To install `pgvector`:
-- **macOS (Homebrew)**: `brew install pgvector`
-- **Linux (Debian/Ubuntu)**: `sudo apt install postgresql-15-pgvector` (adjust `15` to match your installed PostgreSQL version), or compile from source following the [pgvector installation guide](https://github.com/pgvector/pgvector#installation).
+La fourniture d'une clé API Gemini (`GEMINI_API_KEY`) pour générer les embeddings est entièrement optionnelle ; si elle est omise, l'application continuera à fonctionner normalement sans recommandations sémantiques.
 
-However, providing a Gemini API key (`GEMINI_API_KEY`) to actually generate the embeddings is completely optional; if omitted, the app will continue to function normally without semantic recommendations.
+Un aperçu plus complet de notre stack est disponible dans [notre documentation](https://docs.estra-link.com/technical-overview/stack).
 
-A more complete overview of our stack is available in
-[our docs](https://developers.forem.com/technical-overview/stack).
+Pour **lancer ESTRA LINK dans Gitpod**, rendez-vous sur [https://gitpod.io/#https://github.com/{votre_nom_utilisateur_github}/estra-link](https://gitpod.io/#https://github.com/{votre_nom_utilisateur_github}/estra-link).
 
-To **launch Forem in Gitpod**, please navigate to
-[https://gitpod.io/#https://github.com/{your_github_username}/forem](https://gitpod.io/#https://github.com/{your_github_username}/forem).
+Pour **lancer ESTRA LINK dans Ona** (anciennement Gitpod), le projet est entièrement configuré pour les environnements de développement Ona. Ouvrez simplement le projet dans Ona et l'environnement sera automatiquement configuré avec tous les services et dépendances nécessaires.
 
-To **launch Forem in Ona** (formerly Gitpod), the project is fully configured for Ona development environments. Simply open the project in Ona and the environment will be automatically configured with all necessary services and dependencies.
+### Documentation d'installation
 
-### Installation Documentation
+Consultez nos guides d'installation :
 
-Please see our installation guides:
+- [macOS, sans conteneurs](https://docs.estra-link.com/getting-started/installation/mac)
+- [Linux, sans conteneurs](https://docs.estra-link.com/getting-started/installation/linux)
 
-- [macOS, without containers](https://developers.forem.com/getting-started/installation/mac)
-- [Linux, without containers](https://developers.forem.com/getting-started/installation/linux)
+## Documentation développeur
 
-## Developer Documentation
+[Consultez notre page de documentation dédiée pour plus de documentation technique](https://docs.estra-link.com). Veuillez noter que bien que la documentation soit un excellent point de départ, certaines parties peuvent être obsolètes au fil de l'évolution du projet.
 
-[Check out our dedicated docs page for more technical documentation](https://developers.forem.com). Please note that while the documentation is a great place to start, some parts may be out of date as the project evolves.
+## Déploiement avec Kamal (Beta)
 
-## Deployment with Kamal (Beta)
+ESTRA LINK est équipé de [Kamal 2](https://kamal-deploy.org/) pour vous permettre de déployer facilement l'application sur n'importe quel fournisseur cloud ou serveur bare metal.
 
-Forem is equipped with [Kamal 2](https://kamal-deploy.org/) to allow you to easily deploy the application to any cloud provider or bare metal server.
+Pour un guide complet, incluant les configurations des fournisseurs cloud (AWS, DigitalOcean, Hetzner, GCP), la gestion des secrets et les particularités de production spécifiques à ESTRA LINK, consultez le [Guide de déploiement Kamal](docs/kamal-deployment.md).
 
-For a comprehensive guide, including cloud provider setups (AWS, DigitalOcean, Hetzner, GCP), secrets management, and Forem-specific production gotchas, see the [Kamal Deployment Guide](docs/kamal-deployment.md).
+### Prérequis
 
-### Prerequisites
-
-Before deploying, ensure you have:
-1. SSH access to your target server(s).
-2. Docker installed on your local machine and target server(s).
-3. A Docker container registry account (e.g., GitHub Container Registry, Docker Hub).
+Avant de déployer, assurez-vous d'avoir :
+1. Un accès SSH à votre/vos serveur(s) cible(s).
+2. Docker installé sur votre machine locale et le(s) serveur(s) cible(s).
+3. Un compte de registre de conteneurs Docker (ex : GitHub Container Registry, Docker Hub).
 
 ### Configuration
 
-1. **Deployment Configuration**: Open [config/deploy.yml](config/deploy.yml) and update:
-   - Your registry username/credentials.
-   - Your domain name in the `proxy` section.
-2. **Environment & Secrets Configuration**: Set the following environment variables on your local machine:
-   - `KAMAL_WEB_IP` / `KAMAL_JOB_IP` / `KAMAL_DB_IP` / `KAMAL_REDIS_IP`: The IP addresses of your servers (default to `192.168.0.1`).
-   - `KAMAL_REGISTRY_PASSWORD`: Access token for your Docker container registry.
-   - `RAILS_MASTER_KEY`: Your Rails master key.
-   - `DATABASE_URL`: Connection string for PostgreSQL. This is always required. If you are using the Kamal postgres accessory, set it to the accessory hostname (e.g. `postgresql://postgres:password@forem-postgres:5432/forem_production`).
-   - `POSTGRES_PASSWORD`: Root password for the PostgreSQL accessory (if using it).
+1. **Configuration de déploiement** : Ouvrez [config/deploy.yml](config/deploy.yml) et mettez à jour :
+   - Votre nom d'utilisateur et identifiants de registre.
+   - Votre nom de domaine dans la section `proxy`.
+2. **Configuration de l'environnement et des secrets** : Définissez les variables d'environnement suivantes sur votre machine locale :
+   - `KAMAL_WEB_IP` / `KAMAL_JOB_IP` / `KAMAL_DB_IP` / `KAMAL_REDIS_IP` : Les adresses IP de vos serveurs (par défaut `192.168.0.1`).
+   - `KAMAL_REGISTRY_PASSWORD` : Token d'accès pour votre registre de conteneurs Docker.
+   - `RAILS_MASTER_KEY` : Votre clé maître Rails.
+   - `DATABASE_URL` : Chaîne de connexion pour PostgreSQL. Ceci est toujours requis. Si vous utilisez l'accessoire Kamal postgres, définissez-le sur le hostname de l'accessoire (ex : `postgresql://postgres:password@estra-link-postgres:5432/estra_link_production`).
+   - `POSTGRES_PASSWORD` : Mot de passe root pour l'accessoire PostgreSQL (si vous l'utilisez).
 
-### Deploying the Application
+### Déploiement de l'application
 
-Run the following commands to set up and deploy the application:
+Exécutez les commandes suivantes pour configurer et déployer l'application :
 
 ```bash
-# 1. Verify your configuration is valid
+# 1. Vérifier que votre configuration est valide
 bundle exec kamal config
 
-# 2. Boot accessories, build & push the docker image, and deploy the application
+# 2. Démarrer les accessoires, construire & pousser l'image docker, et déployer l'application
 bundle exec kamal setup
 
-# 3. Subsequent deploys (rolling updates)
+# 3. Déploiements suivants (mises à jour progressives)
 bundle exec kamal deploy
-```
-
-For more options, refer to the [Kamal documentation](https://kamal-deploy.org/docs/).
-
-
-## Vulnerability Disclosure
-
-Forem is the open source software which powers [DEV](https://dev.to).
-
-We welcome security research on DEV under the terms of our
-[vulnerability disclosure policy](https://dev.to/security).
-
-## Acknowledgements
-
-Thank you to the [Twemoji project](https://github.com/twitter/twemoji) for the
-usage of their emojis.
-
-## License
-
-This program is free software: you can redistribute it and/or modify it under
-the terms of the GNU Affero General Public License as published by the Free
-Software Foundation, either version 3 of the License, or (at your option) any
-later version. Please see the [LICENSE](./LICENSE.md) file in our repository for
-the full text.
-
-Like many open source projects, we require that contributors provide us with a
-Contributor License Agreement (CLA). By submitting code to the Forem project,
-you are granting us a right to use that code under the terms of the CLA.
-
-Our version of the CLA was adapted from the Microsoft Contributor License
-Agreement, which they generously made available to the public domain under
-Creative Commons CC0 1.0 Universal.
-
-Any questions, please refer to our
-[license FAQ](https://developers.forem.com/licensing/) doc or email
-support@dev.to.
-
-<br>
-
-<p align="center">
-  <img alt="Sloan, the sloth mascot" width="250px" src="https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/31047/af153cd6-9994-4a68-83f4-8ddf3e13f0bf.jpg">
-  <br>
-  <strong>Happy Coding</strong> ❤️
-</p>
-
-[⬆ Back to Top](#table-of-contents)
